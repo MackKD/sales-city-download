@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yakima Sales City - download for Windows</title>
+<title>Sales City - download for Windows</title>
 <meta name="description" content="Find local businesses to sell to and watch your prospect list get built, block by block. Free download for Windows.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="assets/icon.png">
@@ -14,7 +14,7 @@
 
 <header class="top">
   <div class="wrap bar">
-    <a class="brand" href="./"><img src="assets/icon.png" alt="" width="36" height="36"><span>Yakima Sales City</span></a>
+    <a class="brand" href="./"><img src="assets/icon.png" alt="" width="36" height="36"><span>Sales City</span></a>
     <nav aria-label="Page sections">
       <a href="#install">Install</a>
       <a href="#faq">FAQ</a>
@@ -26,9 +26,9 @@
   <section class="hero wrap">
     <div class="hero-text">
       <h1>Find local businesses to sell to, and watch your prospect list get built.</h1>
-      <p class="lead">Yakima Sales City is a Windows app that researches businesses in the Yakima Valley for you. Each one appears as a lot in a little city and rises from a foundation to a finished building as details are found. When you're ready, save the list to Excel.</p>
+      <p class="lead">Sales City is a Windows app that researches businesses in your county for you: type your ZIP code and it searches that whole county. Each one appears as a lot in a little city and rises from a foundation to a finished building as details are found. When you're ready, save the list to Excel.</p>
       <p class="cta-row">
-        <a id="dl" class="btn" href="https://github.com/MackKD/yakima-sales-download/releases/latest/download/YakimaSalesCity-Setup.exe">
+        <a id="dl" class="btn" href="https://github.com/MackKD/sales-city-download/releases/latest/download/SalesCity-Setup.exe">
           <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 3v11.2l3.6-3.6 1.4 1.4-6 6-6-6 1.4-1.4 3.6 3.6V3h2zM5 19h14v2H5z"/></svg>
           Download for Windows
         </a>
@@ -67,7 +67,7 @@
       <figcaption>The city follows your clock: lights come on at dusk.</figcaption>
     </figure>
     <figure class="tall">
-      <img src="assets/leads.jpg" width="520" height="1213" loading="lazy" alt="The side panel showing the helpers, a menu to choose what to search for, and buttons to save leads as Excel or text.">
+      <img src="assets/leads.jpg" width="520" height="1444" loading="lazy" alt="The side panel showing your sales area county, the helpers, a menu to choose what to search for, and buttons to save leads as Excel or text.">
       <figcaption>Choose what to look for, then save the results.</figcaption>
     </figure>
   </section>
@@ -85,11 +85,11 @@
       </li>
       <li>
         <h3>Click Next</h3>
-        <p>Follow the installer. You don't need administrator rights, and it adds Yakima Sales City to your Start menu. The suggested install folder is fine for most people; to put it somewhere else, press <strong>Browse</strong> and choose a folder you can save files in.</p>
+        <p>Follow the installer. You don't need administrator rights, and it adds Sales City to your Start menu. The suggested install folder is fine for most people; to put it somewhere else, press <strong>Browse</strong> and choose a folder you can save files in.</p>
       </li>
       <li>
-        <h3>Add your Anthropic key</h3>
-        <p>The first time you open the app, it asks for your Anthropic API key. Create one at <a href="https://console.anthropic.com/settings/keys" rel="noopener noreferrer" target="_blank">console.anthropic.com</a>, copy it, and paste it in. That's it.</p>
+        <h3>Add your Anthropic key and ZIP code</h3>
+        <p>The first time you open the app, it asks for your Anthropic API key. Create one at <a href="https://console.anthropic.com/settings/keys" rel="noopener noreferrer" target="_blank">console.anthropic.com</a>, copy it, and paste it in. Then type a ZIP code in your sales area and the app finds the county to search. You can change it any time.</p>
       </li>
     </ol>
   </section>
@@ -108,6 +108,7 @@
     <ul class="ticks">
       <li>Your leads are saved on your own computer. Nothing is sent to the people who made this app.</li>
       <li>Your API key is stored in Windows Credential Manager. It is only ever sent to Anthropic, and the app never shows it again.</li>
+      <li>The ZIP code lookup is built into the app, so your ZIP code is never sent anywhere. Only the county name is included in the search request to Anthropic.</li>
       <li>The app finds public business details on the web. It never emails or contacts anyone for you.</li>
       <li>When it opens, the app asks GitHub whether a newer version exists. Updates are digitally signed, and the app installs only genuine ones.</li>
     </ul>
@@ -122,7 +123,7 @@
     <details id="verify">
       <summary>How can I check my download is genuine?</summary>
       <p>Every version has a fingerprint (called a SHA-256 checksum). Open PowerShell in your Downloads folder and run:</p>
-      <p><code>Get-FileHash .\YakimaSalesCity-Setup.exe -Algorithm SHA256</code></p>
+      <p><code>Get-FileHash .\SalesCity-Setup.exe -Algorithm SHA256</code></p>
       <p>The result should match this: <code id="sha">(shown here once a version is published)</code></p>
     </details>
     <details>
@@ -134,7 +135,7 @@
     </details>
     <details>
       <summary>How do I uninstall it?</summary>
-      <p>Open <strong>Windows Settings, then Apps</strong>, choose <strong>Yakima Sales City</strong> and click <strong>Uninstall</strong>. You'll be asked whether to keep or delete your saved leads and settings.</p>
+      <p>Open <strong>Windows Settings, then Apps</strong>, choose <strong>Sales City</strong> and click <strong>Uninstall</strong>. You'll be asked whether to keep or delete your saved leads and settings.</p>
     </details>
     <details>
       <summary>It says web search is turned off.</summary>
@@ -142,7 +143,7 @@
     </details>
     <details>
       <summary>Where are my leads stored?</summary>
-      <p>In a folder on your PC at <code>%LOCALAPPDATA%\YakimaSalesCity</code>. Use the <strong>Leads</strong> tab to save a copy as Excel or text.</p>
+      <p>In a folder on your PC at <code>%LOCALAPPDATA%\SalesCity</code>. Use the <strong>Leads</strong> tab to save a copy as Excel or text.</p>
     </details>
   </section>
 </main>
@@ -150,7 +151,7 @@
 <footer class="foot">
   <div class="wrap">
     <p id="contact" hidden>Need help? <a id="contact-link" href="#">Email us</a>.</p>
-    <p class="small">Yakima Sales City is an independent app. It is not made by, or affiliated with, Anthropic. "Claude" and "Anthropic" are trademarks of Anthropic. Business details are gathered automatically from public web pages, so please verify them before you contact anyone.</p>
+    <p class="small">Sales City is an independent app. It is not made by, or affiliated with, Anthropic. "Claude" and "Anthropic" are trademarks of Anthropic. Business details are gathered automatically from public web pages, so please verify them before you contact anyone.</p>
   </div>
 </footer>
 

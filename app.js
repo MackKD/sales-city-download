@@ -2,7 +2,7 @@
 // The page works without this: the Download button always points at the newest installer.
 (function () {
   'use strict';
-  const DEFAULTS = { repo: 'MackKD/yakima-sales-download', installer: 'YakimaSalesCity-Setup.exe', contact: '' };
+  const DEFAULTS = { repo: 'MackKD/sales-city-download', installer: 'SalesCity-Setup.exe', contact: '' };
   const $ = (id) => document.getElementById(id);
 
   function formatSize(bytes) {
